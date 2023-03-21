@@ -1,0 +1,12 @@
+package day16;
+
+public class LambdaEx2 {
+
+	public static void main(String[] args) {
+		/* stream: 자료의 대상과 관계없이 동일한 연산을 수항할 구 있도록 해주는 반복자
+		 * */
+		
+
+	}
+
+}

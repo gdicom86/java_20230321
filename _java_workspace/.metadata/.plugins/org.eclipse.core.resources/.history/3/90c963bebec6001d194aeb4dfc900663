@@ -1,0 +1,13 @@
+package day17;
+
+import java.io.FileWriter;
+
+public class FileWriterEx1 {
+
+	public static void main(String[] args) {
+		/* 문자 기반 스트림
+		 * */
+		FileWriter fw = new FileWriter("test.txt");
+	}
+
+}

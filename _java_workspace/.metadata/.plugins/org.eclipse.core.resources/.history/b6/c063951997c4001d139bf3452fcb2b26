@@ -1,0 +1,16 @@
+package day16;
+
+public class Customer {
+	private String adult;
+	private String child;
+	private int price;
+	
+	CustomerA(String a, int price) {
+		this.adult = a;
+		this.price = 1000000;
+	}
+	CustomerC(String c, int price) {
+		this.child = c;
+		this.price = 500000;
+	}
+}

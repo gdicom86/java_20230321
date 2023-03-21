@@ -1,0 +1,29 @@
+package day17;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+
+public class BuffedReaderEx3 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
+		HashMap<String, Integer> hm = new HashMap<>();
+		
+		while(true) {
+			String line = br.readLine();
+			String name = line.substring(line.indexOf(0), line.indexOf(""));
+			Integer score = line.substring(line.indexOf(""), line.indexOf(-1));
+			if(line == null) {
+				break;
+			}
+			hm.put(name, score);
+		}
+		br.close();
+	}
+
+}

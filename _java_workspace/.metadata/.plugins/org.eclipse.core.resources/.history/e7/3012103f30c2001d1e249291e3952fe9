@@ -1,0 +1,34 @@
+package studentManager;
+
+public class Subject {
+	/* 과목 클래스: 한과목의 정보를 나타내는 클래스
+	 * - 과목코드, 과목 명, 학점, 시수, 교수명, 학기, 분류, 수업시간표
+	 * - 멤버변수 선언 > 생성자 > getter,setter > 그외 필요한 toString(print메서드)
+	 * */
+	//멤버변수 선언 - 일반적으로 private으로 선언
+	private String subCode; // 기본값 null;
+	private String subName; // 기본값 null;
+	private double subCredite;
+	private int subTime;
+	private String subProfessor;
+	private String subSemester;
+	private String subCategory;
+	private String subScheduler;
+	
+	//생성자: 객체를 생성할 때 기본으로 setting 하고자 하는 값을 미리 입력받아서 객체를 생성
+	//생성자는 기본 아무것도 없는 값을 가지고 있음: 생성자를 추가하지 않는다면 자동 생성
+	//추가 생성자를 만든다면 기본 생성자는 사라짐(자동생성하지 않음 => 직접 만들어야 됨)
+	public Subject() {} //기본생성자
+	public Subject(String subName) {
+		this.subName = subName;
+	}
+	//과목코드, 과목명, 학점
+	public Subject(String subCode, String subName, double subcredite) {
+		this.subCode = subCode;
+		this.subName = subName;
+		this.subCredite = subCredite;
+	}
+	//전체 데이터를 받는 생성자
+	
+	
+}

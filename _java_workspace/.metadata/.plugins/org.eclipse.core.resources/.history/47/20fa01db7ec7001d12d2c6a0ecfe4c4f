@@ -1,0 +1,16 @@
+package day18;
+
+public class threadEx1 {
+
+	public static void main(String[] args) {
+		/* Thread(쓰레드)
+		 * - 실행중인 프로그램이 OS로부터
+		 * 메모리를 할당받아 process 상태가 됨
+		 * - 하나의 프로세스는 하나이상의 Thread를 가지게되고, 
+		 * 실제 작업을 수행하는 단위는 thread 단위임.
+		 * - thread 단위는 실제 CPU가 처리하는 단위
+		 * */
+
+	}
+
+}

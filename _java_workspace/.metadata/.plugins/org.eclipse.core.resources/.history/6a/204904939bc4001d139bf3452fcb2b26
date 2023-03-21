@@ -1,0 +1,19 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		ArrayList<Customer> cm = new ArrayList<>();
+		Customer adult1 = new Customer("이순신", 1000000);
+		Customer adult2 = new Customer("신사임당", 1000000);
+		Customer adult3 = new Customer("간디", 500000);
+		cm.add(adult1);
+		cm.add(adult2);
+		cm.add(adult3);
+		cm.stream().forEach(n->n.g)
+
+	}
+
+}

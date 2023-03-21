@@ -1,0 +1,21 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		ArrayList<Customer> cm = new ArrayList<>();
+		cm.add(new Customer("신사임당", 40));
+		cm.add(new Customer("이순신", 40));
+		cm.add(new Customer("간디", 15));
+		cm.stream().forEach(System.out::println);
+		cm.stream().forEach(n->{
+			String name = n.getCustomer();
+			int age = n.getAge();
+			System.out.println(name + age);
+		});
+
+	}
+
+}

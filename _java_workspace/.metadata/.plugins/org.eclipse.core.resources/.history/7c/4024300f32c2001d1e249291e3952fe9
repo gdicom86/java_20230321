@@ -1,0 +1,30 @@
+package studentManager;
+import java.util.Scanner;
+public class ProgramMain {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Program pr = new Program();
+		System.out.println("해당하는 메뉴의 번호를 입력해주세요: ");
+		System.out.printf("1. 학생 등록\n 2. 학생 검색\n 3. 수강신청\n 4. 수강철회\n 5. 종료");
+		int num = scan.nextInt();
+		switch(num) {
+		case 1:
+			pr.insertStudent(scan);
+			break;
+		case 2:
+			pr.searchStudent(scan);
+			break;
+		case 3:
+			pr.registerSubject(scan);
+			break;
+		case 4:
+			pr.deleteSubject(scan);
+			break;
+		case 5:
+			System.out.println("종료합니다.");
+			break;
+		}
+	}
+
+}

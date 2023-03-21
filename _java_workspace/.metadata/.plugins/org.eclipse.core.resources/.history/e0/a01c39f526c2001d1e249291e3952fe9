@@ -1,0 +1,108 @@
+package studentManager;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public interface program {
+	void printStudent(); //학생 전체 리스트
+	void insertStudent(Scanner scan); // 스캐너로 입력받기
+	void searchStudent(Scanner scan); //	학생 검색
+	void registerSubject(Scanner scan); //	수강신청
+	void deleteSubject(Scanner scan); //	수강철회	
+}
+
+class Subject {
+	ArrayList<Integer> code = new ArrayList<>();
+	ArrayList<String> subject = new ArrayList<>();
+	ArrayList<Integer> point = new ArrayList<>();
+	ArrayList<Integer> semester = new ArrayList<>();
+	ArrayList<String> name = new ArrayList<>();
+	code.add(01);
+	code.add(02);
+	code.add(03);
+	code.add(04);
+	code.add(05);
+	subject.add("국어");
+	subject.add("영어");
+	subject.add("수학");
+	subject.add("사회");
+	subject.add("과학");
+	point.add(1);
+	point.add(1);
+	point.add(1);
+	point.add(1);
+	point.add(1);
+	semester.add(2);
+	semester.add(2);
+	semester.add(2);
+	semester.add(2);
+	semester.add(2);
+	name.add("김국어");
+	name.add("이영어");
+	name.add("박수학");
+	name.add("최사회");
+	name.add("임과학");
+	//	과목 클래스:  한 과목의 정보를 나타내는 클래스
+	ArrayList<subject> korean = new ArrayList<>();
+	ArrayList<subject> english = new ArrayList<>();
+	ArrayList<subject> math = new ArrayList<>();
+	ArrayList<subject> social = new ArrayList<>();
+	ArrayList<subject> science = new ArrayList<>();
+
+	//	과목코드 과목명 학점 시수 교수명 학기 분류 수업시간표
+	subject sub = new subject(code, subject, point, semester, name);
+	korean.add(sub("00", "국어", "1", "2", "김국어"));
+	english.add(sub("01", "영어", "1", "2", "이영어"));
+	math.add(sub("02", "수학", "1", "2", "박수학"));
+	social.add(sub("03", "사회", "1", "2", "최사회"));
+	science.add(sub("00", "과학", "1", "2", "임과학"));
+	
+}
+
+class studentManager implements program{
+	ArrayList<String> studInfo = new ArrayList<>();
+	@Override//학생 전체 리스트
+	public void printStudent() {
+		for(int i = 0; i < studInfo.size(); i++) {
+			System.out.print(studInfo.get(i) + " ");
+		}	
+	}
+
+	@Override// 스캐너로 입력받기
+	public void insertStudent(Scanner scan) {
+		System.out.println("이름을 입력하세요: ");
+		String studName = scan.next();
+		studInfo.add(studName);
+	}
+
+	@Override//	학생 검색
+	public void searchStudent(Scanner scan) {
+		System.out.println("검색할 학생의 이름을 입력해주세요: ");
+		String searchName = scan.next();
+		for(int i = 0; i < studInfo.size(); i++) {
+			if(searchName.equals(studInfo.get(i))) {
+				System.out.println(searchName);
+			}
+		}
+	}
+
+	@Override//	수강신청
+	public void registerSubject(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override//	수강철회
+	public void deleteSubject(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+	//	학생 클래스: 한 학생의 정보를 나타내는 클래스
+	//	학번 이름 주민번호 학부 학과 수강과목(과목클래스를 배열 생성)
+	//	수강과목의 번지를 대신할 count
+	//	메서드 
+	//	수강과목 추가(배열이 다 찼다면 늘려주기)
+	//	수강과목 삭제
+	
+}

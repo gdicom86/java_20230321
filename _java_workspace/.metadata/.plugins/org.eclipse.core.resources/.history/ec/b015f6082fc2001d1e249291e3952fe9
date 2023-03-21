@@ -1,0 +1,12 @@
+package studentManager;
+
+public class Subject {
+	/* 과목 클래스: 한과목의 정보를 나타내는 클래스
+	 * - 과목코드, 과목 명, 학점, 시수, 교수명, 학기, 분류, 수업시간표
+	 * */
+	//멤버변수 선언 - 일반적으로 private으로 선언
+	private String subCode; // 기본값 null;
+	private String subName; // 기본값 null;
+	
+	
+}

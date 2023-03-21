@@ -1,0 +1,14 @@
+package day16;
+
+public class Customer {
+	private String adult;
+	private String child;
+	private int price;
+	
+	CustomerA(String a, int price) {
+		
+	}
+	CustomerB(String c, int price) {
+		
+	}
+}

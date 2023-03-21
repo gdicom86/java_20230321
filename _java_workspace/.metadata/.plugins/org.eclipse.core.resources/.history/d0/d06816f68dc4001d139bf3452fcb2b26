@@ -1,0 +1,25 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class StreamEx3 {
+	public static void main(String[] args) {
+		ArrayList<Student> stdList = new ArrayList<>();
+		Student std1 = new Student("Kim", 12);
+		Student std2 = new Student("Lee", 62);
+		Student std3 = new Student("Park", 82);
+		Student std4 = new Student("Song", 72);
+		stdList.add(std1);
+		stdList.add(std2);
+		stdList.add(std3);
+		stdList.add(std4);
+		
+		Stream<Student> s = stdList.stream();
+		s.forEach(System.out::println);
+		Stream<Student> s1 = stdList.stream();
+		System.out.println(s1.count());
+	} 
+	
+
+}

@@ -1,0 +1,37 @@
+package day17;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferedReaderEx2 {
+
+	public static void main(String[] args) throws IOException {
+		
+		/* BufferedReader, PrintWriter
+		 * 파일을 읽어들여 복사하여 객체 생성
+		 * out.txt 파일을 읽어 out2.txt로 쓰기
+		 * */
+		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
+		while(true) {
+			String line = br.readLine();
+			if(line == null) {
+				break;
+			}
+			System.out.println("파일을 읽고있습니다." + line);
+		}
+		
+		
+		FileWriter fw = new FileWriter("out2.txt");
+		String line = br.readLine();
+		while(line == null) {
+			fw.write(line);
+		}
+			
+			
+		br.close();
+	}
+
+}

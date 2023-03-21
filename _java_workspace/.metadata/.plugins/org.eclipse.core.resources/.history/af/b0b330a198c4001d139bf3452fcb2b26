@@ -1,0 +1,14 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class CustomerMain {
+
+	public static void main(String[] args) {
+		ArrayList<Customer> cm = new ArrayList<>();
+		CustomerA a = new Customer("이순신");
+		cm.add(new CustomerA("이순신"));
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package studentManager;
+
+public class ProgramMain {
+
+	public static void main(String[] args) {
+		pro
+		System.out.println();
+		//- 메뉴 구성
+		//학생 등록
+		//학생확인(학생리스트)
+		//학생검색(한 학생의 정보 출력 with 수강정보)
+		//수강신청
+		//수강철회
+		//종료
+
+	}
+
+}

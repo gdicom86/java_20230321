@@ -1,0 +1,14 @@
+package day17;
+
+public class FileObjectEx1 {
+
+	public static void main(String[] args) {
+		/* 파일이 가지고 있는 정보를 출력.
+		 * D:\_java_workspace\java_workspace\out.txt
+		 * */
+		File f = newFile("D:\\_java_workspace\\java_workspace\\out.txt");
+		
+
+	}
+
+}

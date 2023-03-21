@@ -1,0 +1,9 @@
+package product;
+
+import java.util.ArrayList;
+
+public class Product {
+	//메뉴명 가격 
+	ArrayList<String> menu = new ArrayList<>();
+	ArrayList<Integer> Price = new ArrayList<>();
+}

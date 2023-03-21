@@ -1,0 +1,11 @@
+package studentManager;
+
+public interface program {
+	
+	//	학생리스트 츨력
+	//	학생 등록
+	//	학생 검색
+	//	수강신청
+	//	수강철회
+
+}

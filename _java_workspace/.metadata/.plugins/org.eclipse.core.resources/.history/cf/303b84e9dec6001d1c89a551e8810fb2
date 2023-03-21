@@ -1,0 +1,10 @@
+package day17;
+
+public class BuffedReaderEx3 {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader("out.txt");
+
+	}
+
+}

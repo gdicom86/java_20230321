@@ -1,0 +1,13 @@
+package day18;
+
+public class threadEx1 {
+
+	public static void main(String[] args) {
+		/* Thread(쓰레드):
+		 * 실행중인 프로그램(process)이 OS로부터
+		 * 메모리를 할당받아 process 상태가 됨
+		 * */
+
+	}
+
+}

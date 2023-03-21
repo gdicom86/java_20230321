@@ -1,0 +1,19 @@
+package product;
+import java.util.Scanner;
+public class ProductMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//메뉴를 이용하여 출력
+		//ProductManager pm = new ProductManager();
+		System.out.println("> menu");
+		System.out.println("> 1. 제품추가");
+		System.out.println("> 2. 제품리스트보기");
+		System.out.println("> 3. 제품주문주문내역출력");
+		System.out.println("> 4. 종료");
+		int num = sc.nextInt();
+		while() {
+			
+		}
+	}
+
+}

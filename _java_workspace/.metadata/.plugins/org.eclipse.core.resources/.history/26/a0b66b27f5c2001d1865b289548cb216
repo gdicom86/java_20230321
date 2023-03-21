@@ -1,0 +1,15 @@
+package product;
+
+public class ProductMain {
+
+	public static void main(String[] args) {
+		//메뉴를 이용하여 출력
+		ProductManager pm = new ProductManager();
+		System.out.println("> menu");
+		System.out.printf("%3> 1. 제품추가");
+		System.out.printf("%3> 2. 제품리스트보기");
+		System.out.printf("%3> 3. 제품주문주문내역출력");
+		pm.add();
+	}
+
+}

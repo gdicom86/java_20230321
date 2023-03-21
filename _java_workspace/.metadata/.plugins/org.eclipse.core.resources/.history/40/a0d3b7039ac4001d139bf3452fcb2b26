@@ -1,0 +1,14 @@
+package day16;
+
+class Customer {
+	private String adult;
+	private String child;
+	private int price;
+}	
+class CustomerA extends Customer {
+	
+}
+class CustomerC extends Customer {
+		
+}
+

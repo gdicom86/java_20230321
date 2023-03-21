@@ -1,0 +1,17 @@
+package product;
+import java.util.Scanner;
+public class ProductManager {
+	//메뉴등록리스트, 주문리스트
+	Product pr = new Product();
+	int count = 0;
+	Scanner sc = new Scanner(System.in);
+	//메뉴 추가 기능
+	public void add() {
+		System.out.println("추가하실 메뉴명을 입력해주세요: ");
+		String menu = sc.next();
+		System.out.println(menu + "의 가격을 입력해주세요: ");
+		count++;
+	}
+	//메뉴리스트 출력
+	//제품주문주문내역출력
+}

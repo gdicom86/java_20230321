@@ -1,0 +1,33 @@
+package product;
+import java.util.Scanner;
+public class ProductMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = 0;
+		//메뉴를 이용하여 출력
+		ProductManager pm = new ProductManager();
+		
+		
+		do {
+			System.out.println("> menu");
+			System.out.println("> 1. 제품추가");
+			System.out.println("> 2. 제품리스트보기");
+			System.out.println("> 3. 제품주문주문내역출력");
+			System.out.println("> 4. 종료");
+			System.out.print("메뉴 번호 입력: ");
+			switch(num) {
+			case 1:
+				pm.add();
+				break;
+			case 2:
+				pm.print();
+				break;
+			case 3:
+				break;
+			default: System.out.println("잘못된 숫자를 입력하였습니다.");
+			num = sc.nextInt();
+			}
+		} while(num != 4);
+	}
+
+}

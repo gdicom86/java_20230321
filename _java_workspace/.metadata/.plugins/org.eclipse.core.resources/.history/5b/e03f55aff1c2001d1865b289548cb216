@@ -1,0 +1,17 @@
+package product;
+
+import java.util.ArrayList;
+
+public class Product {
+	//메뉴명 가격
+	//멤버변수
+	private ArrayList<String> menu;
+	private ArrayList<Integer> price;
+	//생성자
+	public Product() {}
+	public Product(ArrayList<String> menu, ArrayList<Integer> price) {
+		this.menu = menu;
+		this.price = price;
+	}
+	
+}

@@ -1,0 +1,35 @@
+package day16;
+
+public class Customer {
+	private String customer;
+	private int age;
+	
+	public Customer(String a, int b) {
+		this.customer = a;
+		this.age = b;
+	}
+	
+	public String getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(String customer) {
+		this.customer = customer;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customer=" + customer + ", age=" + age + "]";
+	}
+
+	
+	
+}

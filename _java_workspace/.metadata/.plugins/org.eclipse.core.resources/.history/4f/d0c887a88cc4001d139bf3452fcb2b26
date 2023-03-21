@@ -1,0 +1,13 @@
+package day16;
+
+import java.util.ArrayList;
+
+public class StreamEx3 {
+	ArrayList<Student> stdList = new ArrayList<>();
+	Student std1 = new Student("Kim", 12);
+	Student std2 = new Student("Lee", 62);
+	Student std3 = new Student("Park", 82);
+	Student std4 = new Student("Song", 72);
+	
+
+}

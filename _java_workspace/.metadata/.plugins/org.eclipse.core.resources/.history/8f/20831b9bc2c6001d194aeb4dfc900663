@@ -1,0 +1,21 @@
+package day17;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Sasda {
+
+	public static void main(String[] args) {
+		try {
+			FileWriter fw2  = new FileWriter("test2.txt");
+			for(int i = 0; i <= 10; i++) {
+				String data = i + " test append1 \r\n"; //\r\n : 줄바꿈
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}
